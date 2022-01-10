@@ -1,0 +1,14 @@
+query {
+    characters(page: 2, filter: { status: "alive", gender: "female" }) {
+      info {
+        count
+      }
+      results {
+        id
+        name
+        status
+        gender
+        species
+      }
+    }
+  }
